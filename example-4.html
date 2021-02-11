@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        У массива так же есть динамическое (меняется при изменении размера массива) 
+        свойство length, равное количеству элементов в массиве 
+        (обратите внимание - не индексу последнего элемента, 
+        а количеству элементов в массива).
+       */
+        const soldiers = ["Румол", "Шаграт", "Ридзер", "Питер"];
+
+        console.log(soldiers.length);
+
+        /* Следовательно, для перебора всего массива можно использовать цикл for,
+        главное - правильно написать  начальное значение и условие:
+        - i изначально равен 0, потому что индекс первого элемента массива всегда 0;
+        - i должно быть меньше длины массива, потому что длина массива (length) - 
+          это всегда индекс последнего элемента + 1
+        */
+
+        for (let i = 0; i < soldiers.length; i++) {
+            console.log(soldiers[i]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!-- У вас есть 2 секты - Свидетели Иеговы и Адвентисты Седьмого дня. Создайте массив тех, кто попадет в Рай, состоящий из тех людей в первом списке, которых нет во втором   -->
+        <script>
+            const JehovahWitnesses = [{
+                    name: "Любовь",
+                    lastName: "Валерьевна",
+                }, {
+                    name: "Лев",
+                    lastName: "Александрович",
+                },
+                {
+                    name: "Поручик",
+                    lastName: "Ржевский",
+                },
+                {
+                    name: "Толстый",
+                    lastName: "сосед",
+                },
+                {
+                    name: "Анастасия",
+                    lastName: "Андреевна",
+                },
+                {
+                    name: "Александр",
+                    lastName: "Петрович",
+                }
+            ];
+
+            const SeventhDayAdventists = [{
+                    name: "Любовь",
+                    lastName: "Валерьевна",
+                }, {
+                    name: "Лев",
+                    lastName: "Александрович",
+                },
+                {
+                    name: "Поручик",
+                    lastName: "Клочко",
+                },
+                {
+                    name: "Толстый",
+                    lastName: "сосед",
+                },
+                {
+                    name: "Анастасия",
+                    lastName: "Андреевна",
+                },
+                {
+                    name: "Александр",
+                    lastName: "Ржевский",
+                }
+            ];            
+        
+
+            const lastNames = SeventhDayAdventists.map((elem)=> elem.lastName);
+            
+            const arrHaven = JehovahWitnesses.filter(function(elem){
+                return !lastNames.includes(elem.lastName);
+            });
+            
+            console.log(arrHaven);                                
+
+
+        </script>
+    </body>
+
+    </html>
+</body></html>

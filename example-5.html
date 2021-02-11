@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Цикл for ... of позволяет перебрать массив без описания условия
+        его перебора, при этом сохраняя КАЖДЫЙ перебираемый элемент
+        массива в отдельную переменную, что немного удобнее обычного цикла for
+        */
+
+        const greateHouses = ["Старки", "Талли", "Аррены", "Ланнистеры", "Баратеоны", "Таргариены", "Тиреллы", "Грейджои"];
+
+        for(const house of greateHouses) {
+            console.log(house);
+        }
+    </script>
+</body>
+</html>
